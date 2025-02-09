@@ -1,0 +1,161 @@
+body{
+   background-color: pink;
+   overflow: hidden;
+   
+}
+main{
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    color: white;
+}
+
+#herth{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    animation: main-anim 5s forwards;
+    
+}
+#herth>img{
+    height: 100px;
+    width: 100px;
+}
+
+
+@keyframes main-anim{
+    0%{
+        transform: translate(-50% ,-50%) translateY(800px) rotateY(0deg);
+       
+        
+        
+    }
+    50%{
+        transform:translate(-50%,-50%) rotateY(180deg);
+    }
+    75%{
+        transform: translate(-50%,-50%) rotateY(0deg);
+        opacity: 1;
+    }
+   
+    100%{
+        transform: translate(-50% ,-50%)rotateY(0deg);
+        opacity: 0;
+        display: none;
+       
+
+    }
+}
+
+@keyframes appear{
+    0%{
+       opacity: 0%;
+    }
+    75%{
+        opacity: 0;
+    }
+    100%{
+       opacity: 1;
+    }
+}
+
+
+
+/* aqui el contenido despues de la animación */
+
+#change{
+    animation: appear 6s forwards;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+
+}
+#change>h1{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+#change>img{
+    width: 250px;
+    height: 250px;
+    align-self: center;
+}
+#buttons{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.button0 {
+	box-shadow:inset 0px -3px 7px 0px #3dc21b;
+	background:linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
+	background-color:#44c767;
+	border-radius:3px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:9px 23px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+    text-align: center;
+    
+}
+.button0:hover {
+	background:linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
+	background-color:#5cbf2a;
+}
+.button0:active {
+	position:relative;
+	top:1px;
+}
+
+.button01 {
+	box-shadow:inset 0px -3px 7px 0px #8a2a21;
+	background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+	background-color:#c62d1f;
+	border-radius:3px;
+	border:1px solid #d02718;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:9px 23px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #810e05;
+}
+.button01:hover {
+	background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+	background-color:#f24437;
+}
+.button01:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+
+.unactive{
+    display: none !important;
+}
+.margin{
+    margin-top: 50px !important;
+}
+
+
+
+
+        
+
+
+
